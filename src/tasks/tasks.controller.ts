@@ -1,11 +1,9 @@
 import { Logger, Patch, Query, UseGuards } from '@nestjs/common';
 import { Body, Delete, Param, Post } from '@nestjs/common';
 import { Controller, Get } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
 import { AuthGuard } from '@nestjs/passport';
-import { config } from 'rxjs';
-import { GetUser } from 'src/auth/get-user.decorator';
-import { User } from 'src/auth/user.entity';
+import { GetUser } from '../auth/get-user.decorator';
+import { User } from '../auth/user.entity';
 import { CreateTaskDto } from './dto/create-task-dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 import { UpdateTaskstatusDto } from './dto/update-task-status.dto';
